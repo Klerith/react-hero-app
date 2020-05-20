@@ -3,7 +3,7 @@ import { heroes } from '../../data/heroes';
 import { HeroCard } from '../heroes/HeroCard';
 import { useForm } from '../../hooks/useForm';
 
-export const SearchScreen = () => {
+export const SearchScreen = ({ history }) => {
 
     const heroesFiltered = heroes;
     const [ formValues, handleInputChange ] = useForm({
@@ -15,6 +15,7 @@ export const SearchScreen = () => {
     const handleSearch = (e) => {
         e.preventDefault();
         console.log( searchText );
+        history.push('?q=batman');
     }
 
     return (
