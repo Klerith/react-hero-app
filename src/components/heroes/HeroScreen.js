@@ -8,6 +8,7 @@ export const HeroScreen = ({ history }) => {
 
     const hero = useMemo(() => getHeroById( heroeId ), [ heroeId ]);
 
+
     if ( !hero ) {
         return <Redirect to="/" />;
     }

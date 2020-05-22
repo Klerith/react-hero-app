@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <Navbar /> debe de mostrarse correctamente 1`] = `
+<nav
+  className="navbar navbar-expand-sm navbar-dark bg-dark"
+>
+  <Link
+    className="navbar-brand"
+    to="/"
+  >
+    <LinkAnchor
+      className="navbar-brand"
+      navigate={[Function]}
+    >
+      <a
+        className="navbar-brand"
+        onClick={[Function]}
+      >
+        Asociaciones
+      </a>
+    </LinkAnchor>
+  </Link>
+  <div
+    className="navbar-collapse"
+  >
+    <div
+      className="navbar-nav"
+    >
+      <NavLink
+        activeClassName="active"
+        className="nav-item nav-link"
+        exact={true}
+        to="/marvel"
+      >
+        <Link
+          aria-current={null}
+          className="nav-item nav-link"
+          to={
+            Object {
+              "hash": "",
+              "pathname": "/marvel",
+              "search": "",
+              "state": null,
+            }
+          }
+        >
+          <LinkAnchor
+            aria-current={null}
+            className="nav-item nav-link"
+            navigate={[Function]}
+          >
+            <a
+              aria-current={null}
+              className="nav-item nav-link"
+              onClick={[Function]}
+            >
+              Marvel
+            </a>
+          </LinkAnchor>
+        </Link>
+      </NavLink>
+      <NavLink
+        activeClassName="active"
+        className="nav-item nav-link"
+        exact={true}
+        to="/dc"
+      >
+        <Link
+          aria-current={null}
+          className="nav-item nav-link"
+          to={
+            Object {
+              "hash": "",
+              "pathname": "/dc",
+              "search": "",
+              "state": null,
+            }
+          }
+        >
+          <LinkAnchor
+            aria-current={null}
+            className="nav-item nav-link"
+            navigate={[Function]}
+          >
+            <a
+              aria-current={null}
+              className="nav-item nav-link"
+              onClick={[Function]}
+            >
+              DC
+            </a>
+          </LinkAnchor>
+        </Link>
+      </NavLink>
+      <NavLink
+        activeClassName="active"
+        className="nav-item nav-link"
+        exact={true}
+        to="/search"
+      >
+        <Link
+          aria-current={null}
+          className="nav-item nav-link"
+          to={
+            Object {
+              "hash": "",
+              "pathname": "/search",
+              "search": "",
+              "state": null,
+            }
+          }
+        >
+          <LinkAnchor
+            aria-current={null}
+            className="nav-item nav-link"
+            navigate={[Function]}
+          >
+            <a
+              aria-current={null}
+              className="nav-item nav-link"
+              onClick={[Function]}
+            >
+              Search
+            </a>
+          </LinkAnchor>
+        </Link>
+      </NavLink>
+    </div>
+  </div>
+  <div
+    className="navbar-collapse collapse w-100 order-3 dual-collapse2"
+  >
+    <ul
+      className="navbar-nav ml-auto"
+    >
+      <span
+        className="nav-item nav-link text-info"
+      >
+        Pedro
+      </span>
+      <button
+        className="nav-item nav-link btn"
+        onClick={[Function]}
+      >
+        Logout
+      </button>
+    </ul>
+  </div>
+</nav>
+`;
