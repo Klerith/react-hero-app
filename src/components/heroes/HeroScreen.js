@@ -1,9 +1,10 @@
 import React, { useMemo } from 'react';
 import { useParams, Redirect } from 'react-router-dom';
+import { heroImages } from '../../helpers/heroImages';
 import { getHeroById } from '../../selectors/getHeroById';
 
 // import batman from '../../assets/heroes/dc-batman.jpg'; // estático
-const heroImages = require.context('../../assets/heroes', true );
+// const heroImages = require.context('../../assets/heroes', true );
 
 
 
