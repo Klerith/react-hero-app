@@ -1,28 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useContext } from 'react';
 
-import { Route, Redirect } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
+import { AuthContext } from '../auth/AuthContext';
 
+export const PublicRoute = ({ children }) => {
 
-export const PublicRoute = ({
-    isAuthenticated,
-    component: Component,
-    ...rest
-}) => {
+    const { user } = useContext(AuthContext);
 
-    return (
-        <Route { ...rest }
-            component={ (props) => (
-                ( !isAuthenticated )
-                    ? ( <Component { ...props } /> )
-                    : ( <Redirect to="/" /> )
-            )}
-        
-        />
-    )
+    return user.logged
+        ? <Navigate to="/" />
+        : children
 }
 
-PublicRoute.propTypes = {
-    isAuthenticated: PropTypes.bool.isRequired,
-    component: PropTypes.func.isRequired
-}

@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { heroImages } from '../../helpers/heroImages';
-
 
 export const HeroCard = ({
     id,
@@ -11,11 +9,13 @@ export const HeroCard = ({
     characters,
 }) => {
 
+    const imagePath = `${process.env.PUBLIC_URL}/assets/heroes/${id}.jpg`;
+
     return (
         <div className="card ms-3 animate__animated animate__fadeIn" style={ { maxWidth: 540 } }>
             <div className="row no-gutters">
                 <div className="col-md-4">
-                    <img src={ heroImages(`./${ id }.jpg`) } className="card-img" alt={ superhero } />
+                    <img src={ imagePath } className="card-img" alt={ superhero } />
                 </div>
                 <div className="col-md-8">
                     
@@ -32,7 +32,7 @@ export const HeroCard = ({
                             <small className="text-muted"> { first_appearance } </small>
                         </p>
 
-                        <Link to={ `./hero/${ id }` }>
+                        <Link to={ `/hero/${ id }` }>
                             Más...
                         </Link>
 
